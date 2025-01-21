@@ -44,6 +44,7 @@
     bottom: 120px;
 }
 
+ 
 @media only screen and (max-width: 600px){
 
     #photo-container .column {
@@ -68,12 +69,12 @@
 
 /* bootrap carousel */
 
-.carousel-item {
+/* .carousel-item {
 width: 100%;
-height: 400px;
+height: auto
 } 
 
-/* .carousel-item img {
+.carousel-item img {
 object-fit: contain ;
-
+overflow: hidden;
 }  */

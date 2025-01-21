@@ -6,6 +6,7 @@ header {
 }
 
 header h1{
+    font-family: "Major Mono Display", serif;
     margin: 30px;
     flex-grow: 1;
     text-align: center;
@@ -46,7 +47,8 @@ header ul li a:hover, header ul li a.active {
         justify-content: flex-end;
     }
 @media only screen and (max-width: 600px){
-        header ul{
+    font-family: "Major Mono Display", serif;  
+    header ul{
             justify-content: flex-start;
         }
         /* header h1{} */

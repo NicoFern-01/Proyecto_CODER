@@ -1,65 +1,74 @@
-#sidebar ul{
-    margin: 0;
-    padding: 0 60px;
-    list-style: none;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: flex-start;
-}
-#sidebar ul li {
-    margin: 5px;
-    font-size: 21px;
+#sidebar {
     width: 100%;
-
 }
-#sidebar ul li a{
+
+#sidebar ul {
+    list-style: none;
+    padding: 10px
+    margin: 0x
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar ul li {
+    width: 100%;
+}
+
+#sidebar ul li a {
     display: block;
     padding: 20px;
     color: black;
     text-decoration: none;
     transition: all 0.3s;
 }
-#sidebar ul li a:hover, #sidebar ul li a.active{
+
+#sidebar ul li a:hover, #sidebar ul li a.active {
     color: rgb(92, 92, 189);
     border-left: 4px solid blue;
-    
-
 }
 
-@media only screen and (max-width: 600px){
-    #sidebar ul li{
+@media only screen and (max-width: 600px) {
+    #sidebar ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #sidebar ul li {
         width: auto;
         font-size: 15px;
     }
-    #sidebar ul{
-        flex-flow: wrap row;
-        justify-content: center;
-    }
-    #sidebar ul li a:hover, #sidebar ul li a.active{
+
+    #sidebar ul li a:hover, #sidebar ul li a.active {
         border: none;
         border-bottom: 4px solid blue;
-
     }
 }
 
-@media only screen and (min-width: 768){
-    #sidebar ul li{
-        width: auto;    
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    #sidebar ul {
+        flex-direction: column;
     }
-    #sidebar ul{
-        flex-flow: column wrap;
-        align-items: flex-start;
+
+    #sidebar ul li {
+        width: 100%;
     }
-    #sidebar ul li a:hover, #sidebar ul li a.active{
-        border: none;
+
+    #sidebar ul li a:hover, #sidebar ul li a.active {
         border-left: 4px solid blue;
     }
 }
 
+@media only screen and (min-width: 768px) {
+    #sidebar ul {
+        flex-direction: column;
+    }
 
+    #sidebar ul li {
+        width: 100%;
+    }
 
-
-
-    
-
-
+    #sidebar ul li a:hover, #sidebar ul li a.active {
+        border-left: 4px solid blue;
+    }
+}
