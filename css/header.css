@@ -47,9 +47,13 @@ header ul li a:hover, header ul li a.active {
         justify-content: flex-end;
     }
 @media only screen and (max-width: 600px){
-    font-family: "Major Mono Display", serif;  
+    header h1 {
+        font-family: "Major Mono Display", serif;  
+        font-size: 40px;
+    }
+    
     header ul{
             justify-content: flex-start;
         }
-        /* header h1{} */
+        
 }
