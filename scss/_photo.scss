@@ -54,17 +54,22 @@
     }
 }
 @media only screen and (min-width: 600px){
-    flex: 50%;
-        max-width: 100%;
+    #photo-container .column {
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 @media only screen and (min-width: 768px){
-    flex: 33.33%;
-        max-width: 100%;
+    #photo-container .column {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
 }
 @media only screen and (min-width: 992px){
-    flex: 25%;
-        max-width: 100%;
-
+    #photo-container .column {
+        flex: 25%;
+        max-width: 25%;
+    }
 }
 
 /* bootrap carousel */

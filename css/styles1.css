@@ -1,5 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@1,900&family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-family: "Major Mono Display", serif;
+  margin: 30px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+header ul {
+  flex-grow: 1;
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  margin: 10px;
+  color: black;
+  transition: all 0.3s;
+}
+
+header ul li a:hover, header ul li a.active {
+  color: rgb(92, 92, 189);
+  border-bottom: 2px solid blue;
+}
+
+@media only screen and (min-width: 1200px) {
+  header h1 {
+    text-align: left;
+    font-family: "Major Mono Display", serif;
+  }
+}
+header ul {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-family: "Major Mono Display", serif;
+    font-size: 40px;
+  }
+  header ul {
+    justify-content: flex-start;
+  }
+}
+#sidebar {
+  width: 100%;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+}
+
+#sidebar ul li {
+  width: 100%;
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#sidebar ul li a:hover, #sidebar ul li a.active {
+  color: rgb(92, 92, 189);
+  border-left: 4px solid blue;
+}
+
+@media only screen and (max-width: 600px) {
+  #sidebar ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #sidebar ul li {
+    width: auto;
+    font-size: 15px;
+  }
+  #sidebar ul li a:hover, #sidebar ul li a.active {
+    border: none;
+    border-bottom: 4px solid blue;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  #sidebar ul {
+    flex-direction: column;
+  }
+  #sidebar ul li {
+    width: 100%;
+  }
+  #sidebar ul li a:hover, #sidebar ul li a.active {
+    border-left: 4px solid blue;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #sidebar ul {
+    flex-direction: column;
+  }
+  #sidebar ul li {
+    width: 100%;
+  }
+  #sidebar ul li a:hover, #sidebar ul li a.active {
+    border-left: 4px solid blue;
+  }
+}
+#container {
+  display: grid;
+  grid-template-areas: "header header" "sidebar photos" "pie pie";
+}
+
+header {
+  /* background-color: aqua; */
+  grid-area: header;
+}
+
+#sidebar {
+  /* background-color: brown; */
+  grid-area: sidebar;
+}
+
+#photo-container {
+  /* background-color: blueviolet; */
+  grid-area: photos;
+}
+
+#pie {
+  /* background-color: rgb(181, 181, 41); */
+  grid-area: pie;
+  background-color: white;
+  border-top: 2px solid #ccc;
+  padding: 5px 0;
+  text-align: center;
+}
+
+@media only screen and (max-with: 600px) {
+  #container {
+    display: grid;
+    grid-template-areas: "header " "sidebar " "photos " "pie ";
+  }
+}
+@media only screen and (min-with: 600px) {
+  #container {
+    display: grid;
+    grid-template-areas: "header " "sidebar " "photos " "pie ";
+  }
+}
+@media only screen and (min-with: 768px) {
+  #container {
+    display: grid;
+    grid-template-areas: "header header" "sidebar photos" "pie pie";
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor .form .form-header .form-title {
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff851b;
+  text-align: center;
+  padding: 12px 0;
+  align-items: center;
+}
+
+.contenedor .form .form-header .form-title span {
+  color: #0c0c0c;
+}
+
+.contenedor .form {
+  background: rgba(8, 8, 8, 0.09);
+  width: 90%;
+  max-width: 650px;
+  padding: 5px 35px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+.contenedor .form .label {
+  display: block;
+  color: #f3770a;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  margin-left: 40px;
+}
+
+.contenedor .form .form-input, .form-textarea {
+  width: 500px;
+  background: rgba(137, 132, 165, 0.511);
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #e38306;
+  padding: 3px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: #0c0c0c;
+}
+
+#photo-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#photo-container .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0px 4px;
+}
+
+#photo-container .column .photo {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+#photo-container .column .photo img {
+  width: 100%;
+  height: auto;
+}
+
+.photo {
+  width: 100%;
+}
+
+#wsp {
+  width: 40px;
+  position: fixed;
+  left: 26px;
+  bottom: 30px;
+}
+
+#inst {
+  width: 55px;
+  position: fixed;
+  left: 18px;
+  bottom: 78px;
+}
+
+#x {
+  width: 75px;
+  position: fixed;
+  left: 8px;
+  bottom: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  #photo-container .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #photo-container .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #photo-container .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #photo-container .column {
+    flex: 25%;
+    max-width: 25%;
+  }
+}
+/* bootrap carousel */
+/* .carousel-item {
+width: 100%;
+height: auto
+} 
+
+.carousel-item img {
+object-fit: contain ;
+overflow: hidden;
+}  */
+.photo-container-urbano {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  padding-bottom: 20px;
+}
+
 h1 {
-  font-color: red;
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 1%;
+}
+
+h4 {
+  margin-top: 5%;
+}
+
+.contenedor-foto {
+  width: 230px;
+  height: 230px;
+  border-radius: 40%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  border: 5px solid black;
+  margin: 8px;
+}
+
+.contenedor-foto img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.nombre {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5%;
 }
 
 /*# sourceMappingURL=styles1.css.map */

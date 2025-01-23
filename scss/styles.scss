@@ -1,3 +1,9 @@
-h1{
-    font-color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:ital,wght@1,900&family=Press+Start+2P&display=swap');
+@import 'common';
+@import 'header';
+@import 'sidebar';
+@import 'grid';
+@import 'contacto';
+@import 'photo';
+@import 'urbano';
+@import 'sobremi';
