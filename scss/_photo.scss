@@ -24,12 +24,16 @@
 .photo  {
     width: 100%;
 }
-
-#wsp{
+.photo:hover {
+    transform: scale(0.9); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+    #wsp{
     width: 40px;
     position: fixed;
     left: 26px;
     bottom: 30px;
+    
 }
 #inst{
     width: 55px;

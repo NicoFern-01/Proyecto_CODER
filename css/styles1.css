@@ -256,6 +256,11 @@ header {
   width: 100%;
 }
 
+.photo:hover {
+  transform: scale(0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 #wsp {
   width: 40px;
   position: fixed;
@@ -356,6 +361,18 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5%;
+}
+
+#wsp:hover {
+  transform: scale(1.2);
+}
+
+#inst:hover {
+  transform: scale(1.2);
+}
+
+#x:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=styles1.css.map */
