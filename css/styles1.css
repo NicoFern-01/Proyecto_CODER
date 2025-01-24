@@ -282,6 +282,12 @@ header {
   bottom: 120px;
 }
 
+.carousel-inner {
+  height: 400px;
+  width: 600px;
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 600px) {
   #photo-container .column {
     flex: 100%;
@@ -373,6 +379,23 @@ h4 {
 
 #x:hover {
   transform: scale(1.2);
+}
+
+.contenedor-foto1 {
+  display: inline-block;
+  width: 600px;
+  height: 400px;
+  border-radius: 10%;
+  overflow: hidden;
+  gap: 20px;
+  vertical-align: middle;
+  margin: 20px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+h2 {
+  text-align: left;
 }
 
 /*# sourceMappingURL=styles1.css.map */

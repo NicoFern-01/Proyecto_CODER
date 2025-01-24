@@ -48,6 +48,12 @@
     bottom: 120px;
 }
 
+.carousel-inner {
+    height: 400px;
+    width: 600px;
+    object-fit: contain; 
+
+}
  
 @media only screen and (max-width: 600px){
 
