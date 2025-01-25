@@ -50,11 +50,16 @@
 
 .carousel-inner {
     height: 400px;
-    width: 600px;
+    width: 700px;
     object-fit: contain; 
+    
 
 }
- 
+.photo-container-urbano{
+    margin-bottom: 80px;
+    margin-top: 70px;
+    }
+    
 @media only screen and (max-width: 600px){
 
     #photo-container .column {
