@@ -415,4 +415,14 @@ h2 {
   margin: 30px;
 }
 
+h2 {
+  font-size: 2em;
+}
+
+@media (max-width: 320px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
