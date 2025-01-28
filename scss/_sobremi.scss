@@ -29,8 +29,49 @@ margin: 8px;
 .nombre { 
     display: inline-block;
     vertical-align: middle;
-    margin-left: 5%; }
+    margin-left: 25%; }
 
+    // flota 
+    
+    @keyframes float {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translatey(-20px);
+        }
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translatey(0px);
+        }
+    }
+    
+    .container-avatar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .avatar {
+        margin-left: 50px;
+        margin-top: 10px;
+        width: 210px;
+        height: 210px;
+        box-sizing: border-box;
+        border: 5px rgb(6, 6, 6) solid;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img { width: 100%; height: auto; }
+    }   
+    
     //  @media (max-width: 320px) {
     //     h2{
     //            font-size: 1.2rem;}
