@@ -133,6 +133,7 @@ header ul {
 #container {
   display: grid;
   grid-template-areas: "header header" "sidebar photos" "pie pie";
+  grid-template-columns: 400px, 1fr;
 }
 
 header {
@@ -141,7 +142,6 @@ header {
 }
 
 #sidebar {
-  /* background-color: brown; */
   grid-area: sidebar;
 }
 
@@ -177,67 +177,116 @@ header {
     grid-template-areas: "header header" "sidebar photos" "pie pie";
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.contenedor .form .form-header .form-title {
-  font-weight: normal;
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgba(53, 103, 219, 0.7568627451);
-  text-align: center;
-  padding: 12px 0;
+.contenedor {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  padding: 20px;
 }
 
-.contenedor .form .form-header .form-title span {
-  color: #0c0c0c;
-}
-
-.contenedor .form {
+.form {
   background: rgba(8, 8, 8, 0.09);
-  width: 90%;
+  width: 100%;
   max-width: 450px;
-  padding: 5px 35px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding: 20px;
   border-radius: 10px;
 }
 
-.contenedor .form .label {
+.form-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-title {
+  font-weight: normal;
+  color: rgba(53, 103, 219, 0.7568627451);
+}
+
+.form-title span {
+  color: #0c0c0c;
+}
+
+.label {
   display: block;
   color: #0a1ded;
   font-size: 14px;
   font-weight: bold;
-  position: relative;
-  margin-left: 40px;
+  margin-bottom: 5px;
 }
 
-.contenedor .form .form-input, .form-textarea {
-  width: 350px;
+.form-input,
+.form-textarea {
+  width: 100%;
   background: rgba(137, 132, 165, 0.511);
   border: none;
   outline: none;
   border-bottom: 3px solid #0a1ded;
-  padding: 3px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
   font-size: 14px;
   color: #0c0c0c;
 }
 
-@media (max-width: 760px) {
-  .contenedor .form .label {
-    display: block;
-    color: #0a1ded;
+.form-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #3567db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #254ea1;
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+  .form {
+    width: 90%;
+    padding: 15px;
+  }
+  .label {
+    font-size: 13px;
+  }
+  .form-input,
+  .form-textarea {
+    font-size: 13px;
+  }
+}
+@media (max-width: 540px) {
+  .form {
+    width: 95%;
+  }
+  .label {
+    font-size: 12px;
+  }
+}
+@media (max-width: 360px) {
+  .form {
+    width: 100%;
+    padding: 10px;
+  }
+  .label {
     font-size: 10px;
-    font-weight: bold;
-    position: relative;
-    margin-left: 30px;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 #photo-container {
@@ -351,50 +400,34 @@ h4 {
   margin-top: 5%;
 }
 
-.contenedor-foto {
-  width: 230px;
-  height: 230px;
-  border-radius: 40%;
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: middle;
-  border: 5px solid black;
-  margin: 8px;
-}
-
-.contenedor-foto img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.nombre {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 25%;
-}
-
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 15px 5px 0px rgba(0, 0, 0, 0.3);
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translatey(-20px);
+    box-shadow: 0 15px 25px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(70px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 5px 0px rgba(0, 0, 0, 0.3);
     transform: translatey(0px);
   }
 }
 .container-avatar {
+  background-color: aquamarine;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.nombre {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 25%;
 }
 
 .avatar {

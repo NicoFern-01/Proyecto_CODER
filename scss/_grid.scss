@@ -3,7 +3,8 @@
     grid-template-areas: 'header header'
                         'sidebar photos'  
                         'pie pie'                                   ;
-}
+grid-template-columns: 400px ,1fr;
+                    }
 
 header{
     /* background-color: aqua; */
@@ -11,7 +12,7 @@ header{
 
 }   
 #sidebar{
-    /* background-color: brown; */
+    //  background-color: brown; 
     grid-area: sidebar;
 
 }
