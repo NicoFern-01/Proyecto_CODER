@@ -1,10 +1,9 @@
 .contenedor {
-    display: flex;
+    display: flexbox;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #f4f4f4;
-    padding: 20px;
+    min-height: 10vh;
+    padding: 10px;
 }
 
 .form {
@@ -55,7 +54,7 @@
 
 .form-textarea {
     resize: none;
-    height: 100px;
+    height: 70px;
 }
 
 
