@@ -11,13 +11,13 @@
 <body>
 <div id="container">
     <header>
-        <h1>F.G.N - Fotography</h1> 
+        <h1>F.G.N - Photography</h1> 
         <ul>
             <li><a href="./Proyecto_CODER/index.html" class="active">Fhotography</a></li>
             <li><a href="./page/sobremi.html">Sobre mi</a></li>
             <li><a href="./page/equipo.html">Equipos</a></li>
             <li><a href="./page/eventos.html">Eventos</a></li>
-            <li><a href="./page/contacto.html">Contacto</a></li>
+            <li><a href="./page/formulario.html">Contacto</a></li>
         </ul>
     </header>
     
@@ -110,9 +110,21 @@
     </div>  
 
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
 integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
 integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script>
+    document.querySelector('a[href="./page/formulario.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        const width = 460;
+        const height = 600;
+        const left = screen.width - width - 40;
+        const top = 150; 
+        const popup = window.open('./page/formulario.html', 'popup', `width=${width},height=${height},left=${left},top=${top}`);
+    });
+</script>
+</script>
 </body>
 </html>

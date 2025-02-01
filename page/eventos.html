@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Photografia de Fernando</title>
+    <title>Web Photografy de Fernando</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 <div id="container">
     <header>
-        <h1>F.G.N Fotography</h1> 
+        <h1>F.G.N Photography</h1> 
         <ul>
             <li><a href="../index.html">Fotografias</a></li>
             <li><a href="../page/sobremi.html">Sobre mi</a></li>
             <li><a href="../page/equipo.html">Equipos</a></li>
             <li><a href="../page/eventos.html" class="active">Eventos</a></li>
-            <li><a href="../page/contacto.html">Contacto</a></li>
+            <li><a href="../page/formulario.html">Contacto</a></li>
         </ul>
     </header>
     
@@ -48,10 +48,17 @@
         <footer>© 2025 F.G.N PHOTOGRAPHY. Todos los derechos reservados.</footer>
     
     </div>  
-
-
-
 </div>
+<script>
+    document.querySelector('a[href="../page/formulario.html"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        const width = 460;
+        const height = 600;
+        const left = screen.width - width - 40;
+        const top = 150; 
+        const popup = window.open('../page/formulario.html', 'popup', `width=${width},height=${height},left=${left},top=${top}`);
+    });
+</script>
 </body>
 
 </html>
