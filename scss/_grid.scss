@@ -1,64 +1,80 @@
-#container{
+#container {
     display: grid;
-    grid-template-areas: 'header header'
-                        'sidebar photos'  
-                        'pie pie'                                   ;
-grid-template-columns: 400px ,1fr;
-                    }
+    grid-template-areas:
+        'header'
+        'sidebar'
+        'photos'
+        'pie';
+    grid-template-columns: 1fr;
+}
 
-header{
-    /* background-color: aqua; */
+header {
     grid-area: header;
+}
 
-}   
-#sidebar{
-    //  background-color: brown; 
+#sidebar {
     grid-area: sidebar;
-
 }
 
-#photo-container{
-    /* background-color: blueviolet; */
+#photo-container {
     grid-area: photos;
-
 }
 
-#pie { 
-    /* background-color: rgb(181, 181, 41); */
+#pie {
     grid-area: pie;
     background-color: white;
     border-top: 2px solid #ccc;
     padding: 5px 0;
     text-align: center;
+}
 
-}
-@media only screen and (max-with:600px)
-{
+@media only screen and (min-width: 320px) {
     #container {
-        display: grid;
-        grid-template-areas:'header '
-                            'sidebar '
-                            'photos '
-                            'pie ';
-    }
-}
-@media only screen and (min-with:600px)
-{
-    #container {
-        display: grid;
-        grid-template-areas: 'header '
-                            'sidebar '
-                            'photos '
-                            'pie ';
+        grid-template-areas:
+            'header'
+            'sidebar'
+            'photos'
+            'pie';
+        grid-template-columns: 1fr;
     }
 }
 
-@media only screen and (min-with:768px)
-{
+@media only screen and (min-width: 540px) {
     #container {
-        display: grid;
-        grid-template-areas:'header header'
-                            'sidebar photos'
-                            'pie pie';
+        grid-template-areas:
+            'header header'
+            'sidebar photos'
+            'pie pie';
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    #container {
+        grid-template-areas:
+            'header header'
+            'sidebar photos'
+            'pie pie';
+        grid-template-columns: 1fr 3fr;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    #container {
+        grid-template-areas:
+            'header header'
+            'sidebar photos'
+            'pie pie';
+        grid-template-columns: 1fr 4fr;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #container {
+        grid-template-areas:
+            'header header'
+            'sidebar photos'
+            'pie pie';
+        grid-template-columns: 1fr 5fr;
     }
 }
