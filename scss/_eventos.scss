@@ -11,6 +11,7 @@
     margin: 20px;
     margin-top: 30px;
     margin-bottom: 100px;
+    margin-left: 400px;
 }
 
 h2 {
@@ -21,18 +22,20 @@ h2 {
 @media only screen and (max-width: 320px) {
     .contenedor-foto1 {
         max-width: 250px;
-        height: 167px; /* Manteniendo la proporción 3:2 */
+        height: 167px; 
+        margin-left: 10px;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
     .contenedor-foto1 {
         max-width: 300px;
-        height: 200px; /* Manteniendo la proporción 3:2 */
+        height: 200px; 
+        margin-left: 10px;
     }
 
     h2 {
@@ -43,7 +46,8 @@ h2 {
 @media only screen and (min-width: 481px) and (max-width: 720px) {
     .contenedor-foto1 {
         max-width: 400px;
-        height: 267px; /* Manteniendo la proporción 3:2 */
+        height: 267px; 
+        margin-left: 10px;
     }
 
     h2 {
@@ -54,7 +58,7 @@ h2 {
 @media only screen and (min-width: 721px) and (max-width: 980px) {
     .contenedor-foto1 {
         max-width: 500px;
-        height: 333px; /* Manteniendo la proporción 3:2 */
+        height: 333px; 
     }
 
     h2 {
@@ -65,7 +69,7 @@ h2 {
 @media only screen and (min-width: 981px) and (max-width: 1200px) {
     .contenedor-foto1 {
         max-width: 550px;
-        height: 367px; /* Manteniendo la proporción 3:2 */
+        height: 367px; 
     }
 
     h2 {
@@ -76,7 +80,7 @@ h2 {
 @media only screen and (min-width: 1201px) {
     .contenedor-foto1 {
         max-width: 800px;
-        height: 400px; /* Manteniendo la proporción 3:2 */
+        height: 400px; 
     }
 
     h2 {
