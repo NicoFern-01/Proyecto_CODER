@@ -1,18 +1,26 @@
-#wsp:hover{
+#wsp:hover {
     transform: scale(1.2);
 }
-#inst:hover{
+#inst:hover {
     transform: scale(1.2);
 }
-#x:hover{
+#x:hover {
     transform: scale(1.2);
 }
 
-/* Media query para pantallas de 640px o menos */
 @media (max-width: 640px) {
     #wsp:hover,
     #inst:hover,
     #x:hover {
-        transform: scale(1); /* Vuelve a la escala original */
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 640px) {
+    #wsp:hover,
+    #inst:hover,
+    #x:hover {
+        transform: scale(1);
     }
 }
