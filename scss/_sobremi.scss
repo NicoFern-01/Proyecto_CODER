@@ -67,34 +67,35 @@ h4 {
 
 @media only screen and (max-width: 320px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     h2 {
         font-size: 0.5em;
+        font-display: center;
     }
     h3 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .avatar {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
     }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 540px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     h2 {
         font-size: 0.5em;
-    font-display: center;
+        font-display: left;
     }
     h3 {
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .avatar {
-        width: 100px;
-        height: 100px;
+        width: 40px;
+        height: 40px;
     }
 }
 

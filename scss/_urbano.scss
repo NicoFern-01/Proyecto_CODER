@@ -1,8 +1,50 @@
 .photo-container-urbano {
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    display: flex; 
     padding-bottom: 20px;
     margin-left: 300px;
+    max-width: 100%;
+    overflow: hidden;
 
+}
+@media (max-width: 320px) { 
+    .carousel-item img {
+        height: 150px; 
+        object-fit: cover;
+    }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+    .carousel-item img {
+        height: 200px; 
+        object-fit: cover;
+    }
+    
+    .photo-container-urbano {
+        margin-left: 0;
+    }
+}
+@media (min-width: 481px) and (max-width: 780px) {
+    .carousel-item img {
+        height: 300px; 
+    }
+}
+
+@media (min-width: 781px) and (max-width: 980px) {
+    .carousel-item img {
+        height: 400px; 
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 981px) and (max-width: 1200px) {
+    .carousel-item img {
+        height: 500px; 
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1201px) {
+    .carousel-item img {
+        height: 600px; 
+        object-fit: cover;
+    }
 }

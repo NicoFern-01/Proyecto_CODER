@@ -54,7 +54,7 @@ header ul li a.active {
     font-size: 19px;
   }
   header ul li a {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 540px) {
@@ -62,7 +62,7 @@ header ul li a.active {
     font-size: 20px;
   }
   header ul li a {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media only screen and (min-width: 720px) {
@@ -95,7 +95,6 @@ header ul li a.active {
     font-size: 22px;
   }
 }
-/* Estilos generales */
 #sidebar {
   width: 100%;
   background-color: #ffffff;
@@ -149,7 +148,7 @@ header ul li a.active {
   }
   #sidebar ul li {
     width: 100%;
-    font-size: 15px;
+    font-size: 12px;
   }
   #sidebar ul li a {
     padding: 18px;
@@ -163,7 +162,7 @@ header ul li a.active {
   }
   #sidebar ul li {
     width: auto;
-    font-size: 16px;
+    font-size: 14px;
   }
   #sidebar ul li a {
     padding: 20px;
@@ -478,12 +477,50 @@ header {
 }
 .photo-container-urbano {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   padding-bottom: 20px;
   margin-left: 300px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
+@media (max-width: 320px) {
+  .carousel-item img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .carousel-item img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .photo-container-urbano {
+    margin-left: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 780px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
+@media (min-width: 781px) and (max-width: 980px) {
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 981px) and (max-width: 1200px) {
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+}
+@media (min-width: 1201px) {
+  .carousel-item img {
+    height: 600px;
+    object-fit: cover;
+  }
+}
 h1 {
   font-size: 4em;
 }
@@ -552,33 +589,34 @@ h4 {
 
 @media only screen and (max-width: 320px) {
   h1 {
-    font-size: 1.5em;
-  }
-  h2 {
-    font-size: 0.5em;
-  }
-  h3 {
-    font-size: 1.2em;
-  }
-  .avatar {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media only screen and (min-width: 321px) and (max-width: 540px) {
-  h1 {
-    font-size: 1.5em;
+    font-size: 1em;
   }
   h2 {
     font-size: 0.5em;
     font-display: center;
   }
   h3 {
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .avatar {
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  h1 {
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 0.5em;
+    font-display: left;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
   }
 }
 @media only screen and (min-width: 541px) and (max-width: 720px) {
