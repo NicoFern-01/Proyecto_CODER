@@ -434,9 +434,9 @@ header {
 }
 
 #x {
-  width: 75px;
+  width: 28px;
   position: fixed;
-  left: 8px;
+  left: 32px;
   bottom: 120px;
 }
 
@@ -485,14 +485,14 @@ header {
 
 @media (max-width: 320px) {
   .carousel-item img {
-    height: 150px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }
 }
 @media (min-width: 321px) and (max-width: 480px) {
   .carousel-item img {
-    height: 200px;
+    height: 300px;
     width: 100%;
     object-fit: cover;
   }
